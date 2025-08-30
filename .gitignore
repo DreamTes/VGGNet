@@ -1,0 +1,50 @@
+# IDE settings
+.idea/
+.vscode/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# 项目产物（忽略以减少 push 体积）
+data/
+outputs/
+logs/
+
+# checkpoints：保留目录，但忽略其中文件（可用 .gitkeep/README.md 占位）
+checkpoints/**
+!checkpoints/.gitkeep
+!checkpoints/README.md
+
+# results：仅跟踪图片文件（以及 README）
+results/**
+!results/**/*.png
+!results/**/*.jpg
+!results/**/*.jpeg
+!results/**/*.gif
+!results/README.md
+
+# 模型/导出文件
+*.pth
+*.pt
+*.onnx
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 本地文档和记录（不上传到远程）
+*问题解决记录.md
+*解决记录.md
+学习笔记.md
+TODO.md
